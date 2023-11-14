@@ -1,0 +1,67 @@
+@media all and (min-width: 1200px) {
+}
+
+/* Medium devices */
+@media all and (max-width: 1200px) {
+  a,
+  button {
+    font-size: 0.8rem;
+  }
+
+  .icon::after {
+    padding: 16px;
+  }
+
+  .icon::before {
+    padding: 20px 0 20px 20px;
+  }
+
+
+  
+  .gallery .container{
+    height: 98rem;
+    width: calc(calc(100% - 2rem) / 2);
+  }
+}
+
+/* small devices */
+@media all and (max-width: 768px) {
+  .home .container {
+    text-align: center;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+
+  .home .homeParagraph,
+  .home .homeImg {
+    width: 100%;
+  }
+
+  .btnGroup {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .imgContainer {
+    width: calc(100% - 2rem);
+  }
+
+  .gallery .container {
+    height: auto;
+  }
+
+  .chefCards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .mealifySubscribe button,
+  .mealifySubscribe input {
+    padding: 0.125rem 1rem;
+  }
+
+  .newsletter .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; /* ask why this is needed */
+  }
+}
